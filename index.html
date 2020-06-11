@@ -1,109 +1,33 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title> Karni Sales </title>
-  <link href="css/style.css" rel="stylesheet" type="text/css"/>
-
-<style>
-div {
-margin-top:20px;
-margin-left:200px;
-}
-</style>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=latin-ext" rel="stylesheet"/>
-
-
+<title>
+Login page
+</title>
 </head>
 <body>
-<div>
-<a href="index.html" title="Karni Sales Corporation">
-<img src="image/icon.jpg" width="90px" height="70px">
-</a>
-
-<ul>
-	<li><a href="index.html">Home</a></li>
-	<li><a href="#">Courier Detail</a>
-		<ul>
-		<li><a href="#">Professionl</a>
-			<ul>
-			<li><a href="#">Pending</a>
-			<ul>
-			<li><a href="#"></a></li>
-			<li><a href="#"></a></li>
-			</ul>
-			</li>
-			<li><a href="#">Completed</a></li>
-			</ul>
-			</li>
-		<li><a href="#">DTDC</a></li>
-		</ul>
-	</li>
-	<li><a href="#">Transport Detail</a>
-	<ul>
-		<li><a href="Transport\VRL.html">VRL Logistic</a></li>
-		<li><a href="Transport\ARC.html">ARC LTD</a></li>
-		<li><a href="Transport\tci.html">TCI Express</a></li>
-		<li><a href="Transport\navsamta.html">Navsamta Transport</a></li>
-		<li><a href="Transport\DHC.html">DHC Logistics</a></li>
-		<li><a href="Transport\Milan.html">Mila Transport</a></li>
-		<li><a href="Transport\Hindustan.html">Hindustan Transport</a></li>
-	</ul>
-	</li>
-	<li><a href="#">Price list</a>
-	<ul>
-		<li><a href="Price List\ITW.pdf">ITW</a></li>
-		<li><a href="Price List\HMP.pdf">HMP</a></li>
-		<li><a href="Price List\Taparia.pdf">Taparia</a></li>
-		<li><a href="Price List\Venus.pdf">Venus Nose</a></li>
-		<li><a href="Price List\Pitbull.pdf">Pitbull Shoes</a></li>
-		<li><a href="Price List\Drill Bit.pdf">Drill Bit(65% disc)</a></li>
-		<li><a href=""></a></li>
-	</ul>
-	</li>
-
-	</li>
-	<li><a href="#">About</a></li>
-	
-        <li class="">
-              <a href="#" class="js-logout-button">Log Out</a>
-         </li>
-
-  
-</div>
-
-</ul>
-
-
-<script>
-Parse.initialize("D2YY67h0FYnGzyng8hrOm0WTp1ixX5qDO8CqYHB7", "43zudpRpWputFMCXmXz6pZ6UD4NRphieSv709ZRd");
-
-//$(document).ready(
-function () {
-
-  	$('a.js-logout-button').click(
-
-			function (){
-
-				Parse.User.logOut();
-				 
-				var currentUser = Parse.User.current();  // this will now be null
-
-				window.location.replace("login.html");
-				alert("test");
-
-			}
-			
-		);
+<h1 style="font-family:Comic Sans Ms;text-align="center";font-size:20pt;
+color:#00FF00;>
+Simple Login Page
+</h1>
+<form name="login">
+Username<input type="text" name="userid"/>
+Password<input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "karnisales" && form.pswrd.value == "karni@123")
+  {
+    window.open('index.html','_self')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
 }
-//	);
-
 </script>
-
-
-
-<script src=""> </script>
-
 </body>
 </html>
