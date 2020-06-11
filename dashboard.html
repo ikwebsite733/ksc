@@ -77,9 +77,36 @@ margin-top: 10px;
 	
 	<li><a href="#">About</a></li>
 	
-	<<div><a href="logout.js">Logout</a></div>
+        <li class="">
+              <a href="#" class="js-logout-button">Log Out</a>
+         </li>
 	
 </ul>
+	
+	
+<script>
+Parse.initialize("D2YY67h0FYnGzyng8hrOm0WTp1ixX5qDO8CqYHB7", "43zudpRpWputFMCXmXz6pZ6UD4NRphieSv709ZRd");
 
+//$(document).ready(
+function () {
+
+  	$('a.js-logout-button').click(
+
+			function (){
+
+				Parse.User.logOut();
+				 
+				var currentUser = Parse.User.current();  // this will now be null
+
+				window.location.replace("login.html");
+				alert("test");
+
+			}
+			
+		);
+}
+//	);
+
+</script>
 </body>
 </html>
