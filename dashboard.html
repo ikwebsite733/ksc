@@ -38,13 +38,10 @@ margin-top: 10px;
 	</li>
 	<li><a href="#">Transport Detail</a>
 	<ul>
-		<li><a href="Tracking\vrl.html">VRL Logistic</a></li>
+		<li><a href="Tracking\vrl.html" target="_blank">VRL Logistic</a></li>
 		<li><a href="Transport\ARC.html">ARC LTD</a></li>
-		<li><a href="Tracking\tci.html">TCI Express</a></li>
-		<li><a href="Transport\navsamta.html">Navsamta Transport</a></li>
-		<li><a href="Transport\DHC.html">DHC Logistics</a></li>
-		<li><a href="Transport\Milan.html">Mila Transport</a></li>
-		<li><a href="Transport\Hindustan.html">Hindustan Transport</a></li>
+		<li><a href="Tracking\tci.html" target="_blank">TCI Express</a></li>
+
 	</ul>
 	</li>
 	<li><a href="#">Price list</a>
@@ -83,30 +80,5 @@ margin-top: 10px;
 	
 </ul>
 	
-	
-<script>
-Parse.initialize("D2YY67h0FYnGzyng8hrOm0WTp1ixX5qDO8CqYHB7", "43zudpRpWputFMCXmXz6pZ6UD4NRphieSv709ZRd");
-
-//$(document).ready(
-function () {
-
-  	$('a.js-logout-button').click(
-
-			function (){
-
-				Parse.User.logOut();
-				 
-				var currentUser = Parse.User.current();  // this will now be null
-
-				window.location.replace("login.html");
-				alert("test");
-
-			}
-			
-		);
-}
-//	);
-
-</script>
 </body>
 </html>
