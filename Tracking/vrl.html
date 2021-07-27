@@ -1,0 +1,302 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><title>
+	Track Consigment
+</title>
+     
+    <style type="text/css">
+<!--
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16pt;
+}
+.style2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
+}
+.style4 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; font-size: 11px;  }
+.style4a {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; font-size: 11px; color:#8C0F01;  }
+.style4b {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal; font-size: 12px; color:white;  }
+.style5 {font-family: Tahoma;  font-size: 13px;  }
+.h_content {font-family: Verdana;font-size: 10px;font-style: normal;}
+
+-->
+</style>
+<style type="text/css">
+.styled hr{
+  border:0;                   /* for FF; border reset */
+  border-top:10px solid gold; /* set hr thickness for good browsers, set style and color for all */
+  height:10px;                /* set hr thickness for IE */
+  background:transparent;     /* for Opera and Safari; remove default hr color */
+  font-size:14px;             /* for FF to mimic the fix "margins" on hr in IE */
+}
+.styled .hr1{
+  border-top:1px solid red;
+  height:1px;
+}
+.styled .hr2{
+  border-top:3px solid blue;
+  height:3px;
+}
+.styled .hr5{
+  border-top:5px solid green;
+  height:5px;
+}
+#contentScroll { height: 590px; width: 900px; } 
+</style>
+ 
+     
+     
+    <link href="SS.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript" src="http://vrlgroup.in/vrlwebs/ascr/actb.js"></script>
+    <script type="text/javascript" language="javascript" src="http://vrlgroup.in/vrlwebs/ascr/common.js"></script>
+    <script type="text/javascript" language="javascript" src="http://vrlgroup.in/vrlwebs/ascr/bassuvalid.js"></script>
+    <script type="text/javascript" language="javascript" src="http://vrlgroup.in/vrlwebs/ascr/branches.js"></script>    
+   
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-20302700-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+      
+   
+    <script language="javascript" type="text/javascript">
+
+        function goto_vehsearch(vhno, ldt) {
+          
+        var url	="http://WWW.VRLGROUP.IN/VRL/VTS/VEHICLETRACK.ASPX?ID="+ vhno + "&ldate=" + ldt ;      
+        window.open(url,'my_window','width=990,height=300,location=no,scrollbars=yes');
+
+        }
+        function goto_vehsearch_33(vhno, ldt) {
+            alert('Temporary it is Removed');
+            return;
+
+            var url = "http://WWW.VRLGROUP.IN/VRL/VTS/VEHICLETRACK.ASPX?ID=" + vhno + "&ldate=" + ldt;
+            window.open(url, 'my_window', 'width=990,height=300,location=no,scrollbars=yes');
+
+        }
+
+     function goto_img(lrimg){
+        var url	="http://www.vrlgroup.in/tpt/viewimages.php?LRNO="+ lrimg;        
+        window.open(url,'my_window','width=460,height=300,location=no,scrollbars=yes');
+
+        }
+     function LiveTrack(vhno){
+       
+        var url	="http://www.vrlgroup.in/gps/ShowReplay.php?vehicleNo="+ vhno;        
+        window.open(url,'my_window','width=990,height=700,location=no,scrollbars=yes');
+
+        }
+     function LrEmail(lrno){
+       
+        var url	="Accept_Email_Lr.aspx?lrno="+ lrno;        
+        window.open(url,'my_window','width=500,height=220,location=no,scrollbars=yes');
+
+        }
+        
+      function goto_partno() {
+        
+            var frmbkg = document.form1;     
+            var lno=document.all('txtlrno').value;                           
+     
+            var url = "EnterPartNo.aspx?lrno=" + lno + "&det=Y&trtype=vouprint";
+            window.open(url, 'my_window', 'width=460,height=250,location=no,scrollbars=yes');    
+                  
+        }   
+        
+      function goto_download() {
+
+          var frmbkg = document.form1;
+        //  var lno = document.all('txtlrno').value;
+
+          var url = "http://vrlgroup.in/booking/Mobile_Tracker_Reg.aspx";
+          window.open(url, 'my_window', 'width=550,height=200,location=no,scrollbars=no');
+
+      }
+
+        function goto_partnosearch() {
+        
+            var frmbkg = document.form1;     
+            var lno=document.all('txtlrno').value;                           
+     
+            var url = "partnosearch.aspx?lrno=" + lno + "&det=Y&trtype=vouprint";
+            window.open(url, 'my_window', 'width=360,height=150,location=no,scrollbars=yes');    
+                  
+        }
+
+        function Viewinmap(vehno) {
+           // LatLag
+            //alert('newe' );
+           // var url = "http://vrlgroup.in/cr/GPS/GPSMAPVIEW.aspx?DEVID=" + devid + "&VEHNO=" + vehno
+            var url = "MAPVIEW.aspx?VEHNO=" + vehno + "&op=0";
+            //var url = "https://www.google.co.in/maps/@15.2159070,75.1385544,15z?hl=en;"
+            window.open(url, 'my_window', 'width=530,height=520,location=no,scrollbars=no');
+
+
+        }
+        function Viewinmapnew(L1L2) {
+
+            //var url = "MapViewNew.aspx?L1L2=" + L1L2 + "&op=0";
+
+             var d1 = L1L2.split("~");
+            L1L2 = d1[0] + ',' + d1[1];
+           
+            var url = "TESTMAP.aspx?L1L2=" + L1L2 + "&msg=Hello Word&op=0";
+            
+            window.open(url, 'my_window', 'width=530,height=520,location=no,scrollbars=no');
+
+
+        }
+        function ViewinMapOpenStreet(L1L2) {
+
+            //alert('Temporary it is Removed');
+            //return;
+            // PRESIDENT MADAM  INSTRUCTION ON 26-06-2020
+            var d1 = L1L2.split("~");
+            L1L2 = d1[0] + ',' + d1[1];
+
+            var url = "open_street_demo_v1.aspx?L1L2=" + L1L2 + "&msg=Hello Word&op=0";
+
+            window.open(url, 'my_window', 'width=530,height=520,location=no,scrollbars=no');
+
+
+        }
+
+        function Viewinmap_mymyindai(vehno) {
+
+            //alert('newe' );
+            var url = "MAPMYINDIA_VIEW.aspx?VEHNO=" + vehno;
+         
+            window.open(url, 'my_window', 'width=530,height=520,location=no,scrollbars=no');
+         
+
+        }
+
+    </script>	
+    <script type="text/javascript" language="javascript">
+        function displayRow(chk){	
+        
+        var row = document.getElementById("captionDis");	
+        //var row1 = document.getElementById("captionRow1");
+        //var row2 = document.getElementById("captionRow");
+        //var row3 = document.getElementById("captionRow2");
+        if (chk.checked== false)
+            row.style.display = 'none';
+            
+            //row1.style.display = 'none';
+            //row2.style.display = 'none';
+        else
+         row.style.display = '';        
+         //row1.style.display = 'none';
+         //row2.style.display = 'none';
+         //row3.style.display = 'none';
+  
+        }
+        
+          function HIDEST(chk,chk1) {
+	
+            var row = document.getElementById("captionDis");	    		
+        	row.style.display = 'none';       	 	
+        	 	
+        }
+     </script> 
+
+</head>
+<body id="body">
+    <form method="post" action="http://vrlgroup.in/vrlwebs/lrtrack.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQyNDI1Nzc5OWRk6j14dviiLzVakU7fShJwDQU36lJ/mRKhd2lHNJ0gEXg=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="http://vrlgroup.in/vrlwebs/WebResource.axd?d=Ject69F-G1wD9z-eabd9JUoPSsrn14pmBHiLOTLyxdosv4wY04IW0FRsfFdZ6PsvjFZu4zV-6Gatx8iwZX4Cux1y7tjkGU1OMhT5tBED0Ls1&amp;t=637346970242505677" type="text/javascript"></script>
+
+
+<script src="http://vrlgroup.in/vrlwebs/WebResource.axd?d=wp4SEso-eaWxSnAzXxRcp6RQe59NZZhaqri5eH2gN9w5hTU9XLucfrhU_mbWFVeAkQtLvZKDxg1CQC4JkxmsSt5U6j8jamUfUgHs9DsqGZs1&amp;t=637346970242505677" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="81B4E492" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAQhqFHbHElKK1usGRIBC+g384zj+QxX0rV/3/UeAOOmYmEbRaLIjZPDGMiWzY4Y/XySc1xq66CtVinlL2r5TCkadMBXdXqSgr59zSgi3xLxO7evH24YiqQN7sqYv/2mq+0=" />
+</div>
+    <div>
+    
+    <table id="Table_01" width="890" height="650" border="0" cellpadding="0" cellspacing="0" align="center">
+	
+	<tr valign="top" align="center" >
+		<td style="width: 1173px"><table cellspacing="0" border="0" cellpadding="0" style="background-color:#FFFFFF;border-color:#388B99;border-width:1px;color:#388B99;font-family:Verdana;font-size:11px;width:875px;">
+		    
+            <td align="right" width="40%" valign="middle" style="height: 34px"  >
+                <span id="Label2" class="lables" style="font-family:Verdana;font-size:10pt;text-decoration:none;">Consignment No :</span></td>
+             
+            <td align="left" valign="middle" style="height: 34px"  >
+                <input name="txtlrno" type="text" maxlength="10" id="txtlrno" onfocus="this.select();" onkeypress="return atkeys(this,event,false);" onkeyup="focusnext2(this,event,&#39;cmdolder&#39;);" style="color:#C00000;font-size:14pt;font-weight:bold;width:145px;" />&nbsp;
+                <input type="button" name="cmdolder" value="Search.." onclick="javascript:__doPostBack(&#39;cmdolder&#39;,&#39;&#39;)" id="cmdolder" class="button" style="width:100px;" />&nbsp;
+                    <!--<button id="cmdshow" onclick="ShowLRDetail(1);" class="button"><img src="images/search.png"   ALIGN=middle WIDTH=22 HEIGHT=22      />Search</button> !-->
+                    <span id="lblerrormsg" tabindex="23" style="color:Red;font-family:Trebuchet MS;font-weight:bold;"></span>
+                       <a href="#" class="style4" onClick="Javascript:goto_partno();"> Enter PartNo</a>
+<a href="#" class="style4a" onClick="Javascript:goto_partnosearch();"> Search PartNo</a>
+
+
+                </td>
+            
+            </tr>
+		</table>
+		 <div id="contentScroll" style="overflow:auto">
+		 <span id="prn">
+          </span>  
+         </div>
+        <br />
+		
+		</td>
+		
+	</tr>
+	
+
+	
+</>
+<input type="hidden" name="hdpartno" id="hdpartno" />
+    </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+WebForm_AutoFocus('txtlrno');//]]>
+</script>
+</form>
+</body>
+</html>
+
